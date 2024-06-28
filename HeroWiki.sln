@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeroWiki", "HeroWiki\HeroWi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerWiki_Console", "HeroWiki_Console\ServerWiki_Console.csproj", "{D57E4E22-3C9D-4136-B07E-571F32DE4FAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerWiki.Shared.Models", "ServerWiki.Shared.Models\ServerWiki.Shared.Models.csproj", "{CDF677B9-8025-4C36-89EB-FC9522182D45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerWiki.Shared.Data", "ServerWiki.Shared.Data\ServerWiki.Shared.Data.csproj", "{64829A94-5BD5-4BED-81F1-E3C7FAEA8887}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{D57E4E22-3C9D-4136-B07E-571F32DE4FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D57E4E22-3C9D-4136-B07E-571F32DE4FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D57E4E22-3C9D-4136-B07E-571F32DE4FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF677B9-8025-4C36-89EB-FC9522182D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF677B9-8025-4C36-89EB-FC9522182D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF677B9-8025-4C36-89EB-FC9522182D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF677B9-8025-4C36-89EB-FC9522182D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64829A94-5BD5-4BED-81F1-E3C7FAEA8887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64829A94-5BD5-4BED-81F1-E3C7FAEA8887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64829A94-5BD5-4BED-81F1-E3C7FAEA8887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64829A94-5BD5-4BED-81F1-E3C7FAEA8887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

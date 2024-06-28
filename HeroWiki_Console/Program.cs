@@ -1,4 +1,15 @@
-﻿using ServerWiki_Console;
+﻿using ServerWiki.Shared.Data.DB;
+using ServerWiki_Console;
+
+var ServerDAL = new ServerDAL(new ServerWikiContext());
+
+var serverList = ServerDAL.Read();
+
+foreach (var server in serverList) { Console.WriteLine(server); }
+
+var serverFound = ServerDAL.ReadByName("SyslogServer");
+Console.WriteLine($"O Servidor {serverFound} foi encontrado");
+
 
 Dictionary<string, Server> ServerDict = new();
 
@@ -59,7 +70,7 @@ void ServerGet()
 {
     Console.Clear();
     Console.WriteLine("Listagem de Servidores\n");
-    foreach (var server in ServerDict.Values)
+    foreach (var server in ServerDAL.Read())
     {
         Console.WriteLine(server);
     }
@@ -91,6 +102,6 @@ void ServerRegister()
     Console.Write("Digite o sistema operacional do servidor: ");
     string os = Console.ReadLine();
     Server server = new Server(name, os);
-    ServerDict.Add(name, server);
+    ServerDAL.create(server);
     Console.WriteLine($"Servidor {name} adicionado!");
 }

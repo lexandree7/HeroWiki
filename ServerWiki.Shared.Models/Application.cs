@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ServerWiki_Console
 {
-    internal class Application
+    public class Application
     {
         public Application(string name)
         {

@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace ServerWiki_Console
 {
-    internal class Server
+    public class Server
     {
-        public Server(string name, string os)
+        public Server(string name, string teste)
         {
             Name = name;
-            OS = os;
+            OS = "";
         }
 
         public string Name { get; set; }
         public string OS { get; set; }
+        public int Id { get; set; }
 
         public List<Application> applications = new List<Application>();
 
