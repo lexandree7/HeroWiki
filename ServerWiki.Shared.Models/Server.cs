@@ -8,6 +8,8 @@ namespace ServerWiki_Console
 {
     public class Server
     {
+        public Server() { }
+
         public Server(string name, string teste)
         {
             Name = name;
