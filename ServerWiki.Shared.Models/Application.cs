@@ -11,15 +11,20 @@ namespace ServerWiki_Console
         public Application(string name)
         {
             Name = name;
+            //Description = "";
         }
 
+        public int Id { get; set; }
         public string Name { get; set; }
-        public string Protocol { get; set; }
+        //Processo de alteração de tabelas por Migrations 
+        //public string Description { get; set; }
         public int Port { get; set; }
+
+        public virtual Server? Server { get; set; }
 
         public override string ToString()
         {
-            return $@"Application: {Name}";
+            return $@"Aplicacao: {Name}";
         }
     }
 }

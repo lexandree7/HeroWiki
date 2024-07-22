@@ -8,29 +8,27 @@ namespace ServerWiki_Console
 {
     public class Server
     {
-        public Server() { }
-
-        public Server(string name, string teste)
+        public Server(string name, string os)
         {
             Name = name;
-            OS = "";
+            Os = os;
         }
 
-        public string Name { get; set; }
-        public string OS { get; set; }
         public int Id { get; set; }
+        public string Name { get; set; }
+        public string Os { get; set; }
 
-        public List<Application> applications = new List<Application>();
+        public virtual ICollection<Application> Applications { get; set; } = new List<Application>();
 
         public void AddApplications(Application application)
         {
-            applications.Add(application);
+            Applications.Add(application);
         }
 
         public void ShowApplications()
         {
-            Console.WriteLine($"Aplicações de {Name}:");
-            foreach (var application in applications)
+            Console.WriteLine($"Aplicacoes de {Name}:");
+            foreach (var application in Applications)
             {
                 Console.WriteLine(application);
             }
@@ -38,7 +36,7 @@ namespace ServerWiki_Console
 
         public override string ToString()
         {
-            return $@"Nome: {Name}";
+            return $@"Id: {Id} - Nome: {Name}";
         }
 
     }

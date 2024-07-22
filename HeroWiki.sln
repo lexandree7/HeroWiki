@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeroWiki", "HeroWiki\HeroWiki.csproj", "{C532DCCD-33CC-4FC0-AD05-3E0C3AD82C5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerWiki", "HeroWiki\ServerWiki.csproj", "{C532DCCD-33CC-4FC0-AD05-3E0C3AD82C5B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerWiki_Console", "HeroWiki_Console\ServerWiki_Console.csproj", "{D57E4E22-3C9D-4136-B07E-571F32DE4FAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerWiki.Shared.Models", "ServerWiki.Shared.Models\ServerWiki.Shared.Models.csproj", "{CDF677B9-8025-4C36-89EB-FC9522182D45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerWiki.Shared.Models", "ServerWiki.Shared.Models\ServerWiki.Shared.Models.csproj", "{CDF677B9-8025-4C36-89EB-FC9522182D45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerWiki.Shared.Data", "ServerWiki.Shared.Data\ServerWiki.Shared.Data.csproj", "{64829A94-5BD5-4BED-81F1-E3C7FAEA8887}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerWiki.Shared.Data", "ServerWiki.Shared.Data\ServerWiki.Shared.Data.csproj", "{64829A94-5BD5-4BED-81F1-E3C7FAEA8887}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

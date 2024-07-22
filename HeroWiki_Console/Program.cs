@@ -1,14 +1,14 @@
 ﻿using ServerWiki.Shared.Data.DB;
 using ServerWiki_Console;
 
-var ServerDAL = new ServerDAL(new ServerWikiContext());
+var ServerDAL = new DAL<Server>(new ServerWikiContext());
 
 var serverList = ServerDAL.Read();
 
 foreach (var server in serverList) { Console.WriteLine(server); }
 
-var serverFound = ServerDAL.ReadByName("SyslogServer");
-Console.WriteLine($"O Servidor {serverFound} foi encontrado");
+//var serverFound = ServerDAL.ReadByName("SyslogServer");
+//Console.WriteLine($"O Servidor {serverFound} foi encontrado");
 
 
 Dictionary<string, Server> ServerDict = new();
